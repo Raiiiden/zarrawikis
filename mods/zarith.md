@@ -2,7 +2,7 @@
 
 Zarith is the physics library behind my mods. It runs the [Jolt Physics](https://github.com/jrouwe/JoltPhysics) engine inside Minecraft through Stephen Gold's [jolt-jni](https://github.com/stephengold/jolt-jni) bindings, and builds a set of Minecraft features on top of it: blocks that move as rigid bodies, whole builds that fall and break apart, ropes and hinges, and drivable vehicles.
 
-I started Zarith to fix a launch failure. Ragdollified and Felled each shipped their own copy of jolt-jni, and Forge and NeoForge refuse to start when two mods export the same Java packages. Zarith now owns the only copy of jolt-jni in a game and loads its native library once for every mod that needs it. Since then I've built a physics sandbox on top of it, and that's what most of this wiki covers.
+Forge and NeoForge refuse to start when two mods export the same Java packages. Zarith now owns the only copy of jolt-jni in a game and loads its native library once for every mod that needs it.
 
 I wrote this wiki for developers who want to use Zarith from their own mod, or work on Zarith itself. Players only need the [installation section](zarith/getting-started.md#installing-for-players).
 
